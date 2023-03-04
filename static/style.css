@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #ECEFF4;
+    color: #2E3440;
+    font-family: Helvetica, sans-serif;
+}
+
+.root-container {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-container{
+    /* max-width: 1000px; *
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    display: grid;
+    margin: 10px;
+    grid-template-rows: auto;
+}
+
+.publication-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.publication-container ul{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.publication-container li {
+    padding: 10px;
+}
+
+
+.nav {
+    width: 100%;
+    background: #D8DEE9;
+    padding-left: 10px;
+    margin: 0px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.nav li {
+    display: inline;
+    padding: 3px;
+}
+
+.nav ul {
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.text-and-picture {
+    /* margin:auto; */
+    /* height: 100%; */
+}
+
+@media(min-width: 600px){
+    .text-and-picture {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+#text-container {
+    display: block;
+    /* width: 60%; */
+    height: min-content;
+    max-width: 500px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 20px;
+    /* width: 40%; */
+    padding: 0px;
+    max-width: 200px;
+    border-radius: 10%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media(min-width: 600px){
+    .profile {
+       margin-top: auto;
+       max-width: 350px;
+    }
+}
+
+@media(min-width: 600px){
+    #text-container {
+       margin-top: auto;
+    }
+}
+
+.footer{
+    background: #D8DEE9;
+    padding: 10px;
+    box-shadow: 0 2px 0 4px rgba(0,0,0,.2);
+}
